@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+mkdir -p "$BACKUP_DIR"
+cd "$BACKUP_DIR"
+
+/usr/local/bin/burry -e "$ETCD_ADDR" -i etcd -t local
