@@ -19,4 +19,4 @@ ENV ETCD_ADDR=etcd-weave-2379.service.consul:2379
 
 COPY backup /etc/periodic/daily/backup
 
-CMD [ "cron", "-f" ]
+CMD [ "crond", "-f" ]
